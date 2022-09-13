@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StudentInfo>
+    <Student>
+        <Id></Id>
+        <Name>David Maca</Name>
+        <Address>121234 Country Hills Way NW</Address>
+        <Faculty>COMPUTERSCIENCE</Faculty>
+        <Courses>
+            CPSC481 CPSC501
+        </Courses>
+    </Student>
+    <Student>
+        <Id></Id>
+        <Name></Name>
+        <Address></Address>
+        <Faculty></Faculty>
+        <Courses>
+                
+
+        </Courses>
+    </Student>
+    <Student>
+        <Id></Id>
+        <Name></Name>
+        <Address></Address>
+        <Faculty></Faculty>
+        <Courses>
+
+        </Courses>
+    </Student>
+    <Student>
+        <Id></Id>
+        <Name></Name>
+        <Address></Address>
+        <Faculty></Faculty>
+        <Courses>
+
+        </Courses>
+    </Student>
+</StudentInfo>

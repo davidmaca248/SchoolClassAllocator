@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fa8e47e-ab20-4932-8572-65d55c799c22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Allocators/StudentChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Allocators/TeacherChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Helpers/Helpers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/Courses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InputFiles/StudentInformation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InputFiles/TeacherInformation.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Helpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Courses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Course.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Tag Library Descriptor" />
       </list>
     </option>
   </component>
@@ -67,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663035453699</updated>
-      <workItem from="1663035455912" duration="3440000" />
+      <workItem from="1663035455912" duration="5687000" />
     </task>
     <servers />
   </component>

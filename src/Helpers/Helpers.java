@@ -10,6 +10,9 @@ public class Helpers {
         COMPUTERSCIENCE, SOFTWAREENGINEERING, BUSINESS, MATH, ARTS, UNKNOWN;
     }
 
+    public enum Course{
+        CPSC481, CPSC501, CPSC525
+    }
     public static String SchoolIdGenerator()
     {
         return "";

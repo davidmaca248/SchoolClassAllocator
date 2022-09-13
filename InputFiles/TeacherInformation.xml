@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TeacherInfo>
+    <Teacher>
+        <Id></Id>
+        <Name></Name>
+        <Address></Address>
+        <Faculty></Faculty>
+        <Level></Level>
+    </Teacher>
+    <Teacher>
+        <Id></Id>
+        <Name></Name>
+        <Address></Address>
+        <Faculty></Faculty>
+        <Level></Level>
+    </Teacher>
+    <Teacher>
+        <Id></Id>
+        <Name></Name>
+        <Address></Address>
+        <Faculty></Faculty>
+        <Level></Level>
+    </Teacher>
+    <Teacher>
+        <Id></Id>
+        <Name></Name>
+        <Address></Address>
+        <Faculty></Faculty>
+        <Level></Level>
+    </Teacher>
+</TeacherInfo>
