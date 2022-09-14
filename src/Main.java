@@ -31,7 +31,7 @@ public class Main {
         // write to output of teachers
 
         String studentOutput = "./OutputFiles/StudentOutput.txt";
-        String teacherOutput = "./OutputFiles/teacherOutput.txt";
+        String teacherOutput = "./OutputFiles/TeacherOutput.txt";
 
         // write students
         try {
@@ -111,7 +111,10 @@ public class Main {
                                     case "Address":
                                         s.SetAddress(studentElem.getAttribute("value"));
                                         break;
-                                    case "Faculty":
+                                    case "Grade":
+                                        s.SetGrade(Double.parseDouble(studentElem.getAttribute("Grade")));
+                                        break;
+                                    case "Major":
                                         switch (studentElem.getAttribute("value")) {
                                             case "ARTS":
                                                 s.SetMajor(Helpers.Faculty.ARTS);
@@ -132,13 +135,33 @@ public class Main {
                                                 s.SetMajor(Helpers.Faculty.UNKNOWN);
                                                 break;
                                         }
+                                    case "Minor":
+                                        switch (studentElem.getAttribute("value")) {
+                                            case "ARTS":
+                                                s.SetMinor(Helpers.Faculty.ARTS);
+                                                break;
+                                            case "BUSINESS":
+                                                s.SetMinor(Helpers.Faculty.BUSINESS);
+                                                break;
+                                            case "SOFTWAREENGINEERING":
+                                                s.SetMinor(Helpers.Faculty.SOFTWAREENGINEERING);
+                                                break;
+                                            case "COMPUTERSCIENCE":
+                                                s.SetMinor(Helpers.Faculty.COMPUTERSCIENCE);
+                                                break;
+                                            case "MATH":
+                                                s.SetMinor(Helpers.Faculty.MATH);
+                                                break;
+                                            default:
+                                                s.SetMinor(Helpers.Faculty.UNKNOWN);
+                                                break;
+                                        }
                                 }
                             }
                         }
                         studentLst.add(s);
                     }
                 }
-                System.out.println("Hello world!");
             }
         }
         catch(Exception e){
@@ -235,7 +258,6 @@ public class Main {
                         teacherLst.add(t);
                     }
                 }
-                System.out.println("Hello world!");
             }
         }
         catch(Exception e){

@@ -4,20 +4,26 @@
         <Id value="1"/>
         <Name value="David Maca"/>
         <Address value="121234 Country Hills Way NW"/>
-        <Faculty value="COMPUTERSCIENCE"/>
+        <Major value="COMPUTERSCIENCE"/>
+        <Minor value="MATH"/>
+        <Grade value="3.4"/>
     </Student>
 
     <Student>
         <Id value="2"/>
         <Name value="Dan Mac"/>
         <Address value="432 Cove Hills Cove SW"/>
-        <Faculty value="MATH"/>
+        <Major value="MATH"/>
+        <Minor value="ARTS"/>
+        <Grade value="2.6"/>
     </Student>
 
     <Student>
         <Id value="3"/>
         <Name value="John Gotti"/>
         <Address value="645 Panorama Hills Drive NE"/>
-        <Faculty value="BUSINESS"/>
+        <Major value="BUSINESS"/>
+        <Minor value="MATH"/>
+        <Grade value="4.0"/>
     </Student>
 </StudentInfo>

@@ -6,12 +6,15 @@ import Helpers.Helpers.Faculty;
 public class Student extends Person{
 
     public Faculty Major = Faculty.UNKNOWN;
+    public Faculty Minor = Faculty.UNKNOWN;
+    public double Grade;
 
     public Student(){}
-    public Student(String id, String name, String address, String major){
+    public Student(String id, String name, String address, String major, String minor, double grade){
         Name = name;
         Address = address;
         Id = SchoolIdGenerator();
+        Grade = grade;
 
         switch (major){
             case "ARTS":
@@ -30,6 +33,24 @@ public class Student extends Person{
                 Major = Faculty.UNKNOWN;
                 break;
         }
+
+        switch (minor){
+            case "ARTS":
+                Minor = Faculty.ARTS;
+                break;
+            case "BUSINESS":
+                Minor = Faculty.BUSINESS;
+                break;
+            case "SOFTWAREENGINEERING":
+                Minor = Faculty.SOFTWAREENGINEERING;
+                break;
+            case "COMPUTERSCIENCE":
+                Minor = Faculty.COMPUTERSCIENCE;
+                break;
+            default:
+                Minor = Faculty.UNKNOWN;
+                break;
+        }
     }
 
     //Setters
@@ -39,11 +60,13 @@ public class Student extends Person{
     public void SetAddress(String address){
         Address = address;
     }
-    public void SetId(String id) {
-        Id = id;
-    }
+    public void SetId(String id) {Id = id;}
+    public void SetGrade(double grade) {Grade = grade;}
     public void SetMajor(Faculty newMajor){
         Major = newMajor;
+    }
+    public void SetMinor(Faculty newMinor){
+        Major = newMinor;
     }
 
     //Getters
@@ -61,5 +84,11 @@ public class Student extends Person{
 
     public Faculty GetMajor(){
         return Major;
+    }
+    public Faculty GetMinor(){
+        return Minor;
+    }
+    public double GetGrade(){
+        return Grade;
     }
 }
