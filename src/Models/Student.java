@@ -66,7 +66,7 @@ public class Student extends Person{
         Major = newMajor;
     }
     public void SetMinor(Faculty newMinor){
-        Major = newMinor;
+        Minor = newMinor;
     }
 
     //Getters

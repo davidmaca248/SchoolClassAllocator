@@ -1,4 +1,6 @@
+import Allocators.StudentChecker;
 import Helpers.Helpers;
+import Helpers.StudentCoursePair;
 import Models.Student;
 import Models.Teacher;
 import org.w3c.dom.Document;
@@ -24,7 +26,12 @@ public class Main {
         studentList = GetStudentIntoList();
         teacherList = GetTeacherIntoList();
 
+        double threshold = 3.0;
+
         // call sorting algorithm for students
+        StudentChecker studentChecker = new StudentChecker(threshold, studentList);
+        studentChecker.SortStudents();
+
         // call sorting algorithm for teachers
 
         // write to output of students
@@ -37,9 +44,10 @@ public class Main {
         try {
             BufferedWriter studentWriter = new BufferedWriter(new FileWriter(studentOutput));
 
-            for (Student s : studentList
+            for (StudentCoursePair sp : studentChecker.GetPairResults()
                  ) {
-                studentWriter.write("Student name: " + s.Name + "\n");
+                studentWriter.write("Student name: " + sp.name());
+                studentWriter.write(", Assigned Faculty: " + sp.assignedCourse() + "\n");
             }
 
             studentWriter.close();
@@ -112,7 +120,7 @@ public class Main {
                                         s.SetAddress(studentElem.getAttribute("value"));
                                         break;
                                     case "Grade":
-                                        s.SetGrade(Double.parseDouble(studentElem.getAttribute("Grade")));
+                                        s.SetGrade(Double.parseDouble(studentElem.getAttribute("value")));
                                         break;
                                     case "Major":
                                         switch (studentElem.getAttribute("value")) {
@@ -135,6 +143,7 @@ public class Main {
                                                 s.SetMajor(Helpers.Faculty.UNKNOWN);
                                                 break;
                                         }
+                                        break;
                                     case "Minor":
                                         switch (studentElem.getAttribute("value")) {
                                             case "ARTS":
@@ -156,6 +165,7 @@ public class Main {
                                                 s.SetMinor(Helpers.Faculty.UNKNOWN);
                                                 break;
                                         }
+                                        break;
                                 }
                             }
                         }
