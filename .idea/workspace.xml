@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fa8e47e-ab20-4932-8572-65d55c799c22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/InputFiles/StudentInformation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InputFiles/TeacherInformation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Helpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputFiles/StudentInformation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InputFiles/StudentInformation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputFiles/TeacherInformation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InputFiles/TeacherInformation.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Courses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Teacher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +35,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -65,7 +66,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663035453699</updated>
-      <workItem from="1663035455912" duration="5687000" />
+      <workItem from="1663035455912" duration="5752000" />
+      <workItem from="1663043506771" duration="29000" />
+      <workItem from="1663084403139" duration="9558000" />
     </task>
     <servers />
   </component>
@@ -82,5 +85,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

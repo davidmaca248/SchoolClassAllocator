@@ -10,12 +10,41 @@ public class Teacher extends Person {
     private Faculty faculty;
     private InstructorLevel level;
 
-    public Teacher(String name, String address){
+    public Teacher(){}
+    public Teacher(String id, String name, String address, String newLevel, String newFaculty){
         Name = name;
         Address = address;
-        Id = SchoolIdGenerator();
-        level = InstructorLevel.UNKNOWN;
-        faculty = Faculty.UNKNOWN;
+        Id = id;
+
+        switch (newLevel){
+            case "TEACHINGASSISTANT":
+                level = InstructorLevel.TEACHINGASSISTANT;
+                break;
+            case "PROFESSOR":
+                level = InstructorLevel.PROFESSOR;
+                break;
+            default:
+                level = InstructorLevel.UNKNOWN;
+                break;
+        }
+
+        switch (newFaculty){
+            case "ARTS":
+                faculty = Faculty.ARTS;
+                break;
+            case "BUSINESS":
+                faculty = Faculty.BUSINESS;
+                break;
+            case "SOFTWAREENGINEERING":
+                faculty = Faculty.SOFTWAREENGINEERING;
+                break;
+            case "COMPUTERSCIENCE":
+                faculty = Faculty.COMPUTERSCIENCE;
+                break;
+            default:
+                faculty = Faculty.UNKNOWN;
+                break;
+        }
     }
 
     //Setters
@@ -31,6 +60,9 @@ public class Teacher extends Person {
     public void SetFaculty(Faculty newFaculty){
         faculty = newFaculty;
     }
+    public void SetLevel(InstructorLevel newLevel) {
+        level = newLevel;
+    }
 
     //Getters
     public String GetName(){
@@ -44,5 +76,8 @@ public class Teacher extends Person {
     }
     public Faculty GetFaculty(){
         return faculty;
+    }
+    public InstructorLevel GetLevel(){
+        return level;
     }
 }

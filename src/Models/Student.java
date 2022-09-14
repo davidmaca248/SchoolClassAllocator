@@ -5,14 +5,31 @@ import Helpers.Helpers.Faculty;
 
 public class Student extends Person{
 
-    public Faculty major;
+    public Faculty Major = Faculty.UNKNOWN;
 
-    public Student(String name, String address){
+    public Student(){}
+    public Student(String id, String name, String address, String major){
         Name = name;
         Address = address;
         Id = SchoolIdGenerator();
 
-        major = Faculty.UNKNOWN;
+        switch (major){
+            case "ARTS":
+                Major = Faculty.ARTS;
+                break;
+            case "BUSINESS":
+                Major = Faculty.BUSINESS;
+                break;
+            case "SOFTWAREENGINEERING":
+                Major = Faculty.SOFTWAREENGINEERING;
+                break;
+            case "COMPUTERSCIENCE":
+                Major = Faculty.COMPUTERSCIENCE;
+                break;
+            default:
+                Major = Faculty.UNKNOWN;
+                break;
+        }
     }
 
     //Setters
@@ -26,7 +43,7 @@ public class Student extends Person{
         Id = id;
     }
     public void SetMajor(Faculty newMajor){
-        major = newMajor;
+        Major = newMajor;
     }
 
     //Getters
@@ -43,6 +60,6 @@ public class Student extends Person{
     }
 
     public Faculty GetMajor(){
-        return major;
+        return Major;
     }
 }

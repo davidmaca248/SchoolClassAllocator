@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TeacherInfo>
     <Teacher>
-        <Id></Id>
-        <Name></Name>
-        <Address></Address>
-        <Faculty></Faculty>
-        <Level></Level>
+        <Id value="63"/>
+        <Name value="Tim Tatum"/>
+        <Address value="52 Country Hills Way NW"/>
+        <Faculty value="COMPUTERSCIENCE"/>
+        <Level value="PROFESSOR"/>
     </Teacher>
+
     <Teacher>
-        <Id></Id>
-        <Name></Name>
-        <Address></Address>
-        <Faculty></Faculty>
-        <Level></Level>
+        <Id value="43"/>
+        <Name value="Brie Max"/>
+        <Address value="4452 Cove Hills Cove SW"/>
+        <Faculty value="MATH"/>
+        <Level value="JANITOR"/>
     </Teacher>
+
     <Teacher>
-        <Id></Id>
-        <Name></Name>
-        <Address></Address>
-        <Faculty></Faculty>
-        <Level></Level>
-    </Teacher>
-    <Teacher>
-        <Id></Id>
-        <Name></Name>
-        <Address></Address>
-        <Faculty></Faculty>
-        <Level></Level>
+        <Id value="64"/>
+        <Name value="Chris Brown"/>
+        <Address value="5322 Panorama Hills Drive NE"/>
+        <Faculty value="BUSINESS"/>
+        <Level value="TEACHINGASSISTANT"/>
     </Teacher>
 </TeacherInfo>
