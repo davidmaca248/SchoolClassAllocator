@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8fa8e47e-ab20-4932-8572-65d55c799c22" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InputFiles/TeacherInformation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InputFiles/TeacherInformation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Allocators/TeacherChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Allocators/TeacherChecker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,7 @@
       <workItem from="1663035455912" duration="5752000" />
       <workItem from="1663043506771" duration="29000" />
       <workItem from="1663084403139" duration="9900000" />
-      <workItem from="1663177510459" duration="8007000" />
+      <workItem from="1663177510459" duration="8107000" />
     </task>
     <servers />
   </component>
