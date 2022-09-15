@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fa8e47e-ab20-4932-8572-65d55c799c22" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Allocators/StudentCheckerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolClassAllocator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolClassAllocator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +17,7 @@
       <list>
         <option value="Tag Library Descriptor" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -29,16 +33,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
+    "create.test.in.the.same.root": "true",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\david\Documents\UofC\Fall2022\CPSC 501\Assignment1\SchoolClassAllocator\Tests" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Allocators" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.StudentCheckerTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SchoolClassAllocator" />
@@ -46,8 +69,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SchoolClassAllocator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.StudentCheckerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentCheckerTest.SortStudentAllGetMajor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SchoolClassAllocator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.StudentCheckerTest" />
+      <option name="METHOD_NAME" value="SortStudentAllGetMajor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentCheckerTest" />
+        <item itemvalue="JUnit.StudentCheckerTest.SortStudentAllGetMajor" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -63,7 +119,9 @@
       <workItem from="1663035455912" duration="5752000" />
       <workItem from="1663043506771" duration="29000" />
       <workItem from="1663084403139" duration="9900000" />
-      <workItem from="1663177510459" duration="8107000" />
+      <workItem from="1663177510459" duration="8486000" />
+      <workItem from="1663258032133" duration="1488000" />
+      <workItem from="1663269312797" duration="4968000" />
     </task>
     <servers />
   </component>
@@ -109,7 +167,42 @@
           <line>306</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Allocators/StudentCheckerTest.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Allocators/StudentCheckerTest.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Models/Student.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Allocators/StudentChecker.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Allocators/StudentChecker.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Allocators/StudentChecker.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="pairs.get(0)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

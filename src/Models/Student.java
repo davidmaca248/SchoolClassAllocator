@@ -10,7 +10,8 @@ public class Student extends Person{
     public double Grade;
 
     public Student(){}
-    public Student(String id, String name, String address, String major, String minor, double grade){
+    public Student(String id, String name, String address,
+                   String major, String minor, double grade){
         Name = name;
         Address = address;
         Id = SchoolIdGenerator();
@@ -29,6 +30,9 @@ public class Student extends Person{
             case "COMPUTERSCIENCE":
                 Major = Faculty.COMPUTERSCIENCE;
                 break;
+            case "MATH":
+                Major = Faculty.MATH;
+                break;
             default:
                 Major = Faculty.UNKNOWN;
                 break;
@@ -46,6 +50,9 @@ public class Student extends Person{
                 break;
             case "COMPUTERSCIENCE":
                 Minor = Faculty.COMPUTERSCIENCE;
+                break;
+            case "MATH":
+                Minor = Faculty.MATH;
                 break;
             default:
                 Minor = Faculty.UNKNOWN;
