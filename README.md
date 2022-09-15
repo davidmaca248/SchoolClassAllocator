@@ -2,11 +2,7 @@
 ## About
 This is a Java project that I made to illustrate a University Course Allocator..
  * Author: David Macababayao
- * Published : 2021/05/10
-
-## Update
-
-**Version 2.0 is released**
+ * Published : 2022/09/14
 
 ## Description
 
