@@ -41,7 +41,7 @@ public class TeacherChecker {
                 Teacher t = TeacherList.get(j);
 
                 // if Faculties Match, set professor
-                if(c.GetFaculty() == t.GetFaculty()){
+                if(c.GetFaculty() == t.GetFaculty() && t.GetLevel() == Helpers.InstructorLevel.PROFESSOR){
                     p.SetProfessor(t.GetName());
                     TeacherList.remove(j);
                     break;
@@ -53,7 +53,7 @@ public class TeacherChecker {
                 Teacher t = TeacherList.get(k);
 
                 // if Faculties Match, set TA
-                if(c.GetFaculty() == t.GetFaculty()){
+                if(c.GetFaculty() == t.GetFaculty() && t.GetLevel() == Helpers.InstructorLevel.TEACHINGASSISTANT){
                     p.SetTeachingAssistant(t.GetName());
                     TeacherList.remove(k);
                     break;

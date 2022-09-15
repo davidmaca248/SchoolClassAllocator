@@ -51,6 +51,6 @@
         <Name value="Michael Jackson"/>
         <Address value="42342 Panorama Hills Drive NE"/>
         <Faculty value="ARTS"/>
-        <Level value="PROFESSOR"/>
+        <Level value="TEACHINGASSISTANT"/>
     </Teacher>
 </TeacherInfo>
