@@ -1,4 +1,5 @@
 import Allocators.StudentChecker;
+import Allocators.TeacherChecker;
 import Helpers.Helpers;
 import Helpers.StudentCoursePair;
 import Models.Student;
@@ -33,6 +34,7 @@ public class Main {
         studentChecker.SortStudents();
 
         // call sorting algorithm for teachers
+        TeacherChecker teacherChecker = new TeacherChecker(teacherList, );
 
         // write to output of students
         // write to output of teachers
