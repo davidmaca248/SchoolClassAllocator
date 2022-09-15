@@ -1,23 +1,23 @@
 package Models;
 
-import Helpers.Helpers;
+import Helpers.Helpers.Faculty;
 
 import java.util.ArrayList;
 
 public class Course {
 
     public String Name;
-    public Helpers.Faculty faculty;
+    public Faculty faculty;
     public Course(){
 
         Name = "";
-        faculty = Helpers.Faculty.UNKNOWN;
+        faculty = Faculty.UNKNOWN;
     }
 
     public String GetName(){
         return Name;
     }
-    public Helpers.Helpers.Faculty GetFaculty(){
+    public Faculty GetFaculty(){
         return faculty;
     }
 

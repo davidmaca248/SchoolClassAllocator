@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fa8e47e-ab20-4932-8572-65d55c799c22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Helpers/CourseTeacherPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InputFiles/CourseInformation.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputFiles/TeacherInformation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InputFiles/TeacherInformation.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Allocators/TeacherChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Allocators/TeacherChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Course.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +68,7 @@
       <workItem from="1663035455912" duration="5752000" />
       <workItem from="1663043506771" duration="29000" />
       <workItem from="1663084403139" duration="9900000" />
-      <workItem from="1663177510459" duration="6050000" />
+      <workItem from="1663177510459" duration="7756000" />
     </task>
     <servers />
   </component>
@@ -89,43 +91,28 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Allocators/StudentChecker.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>19</line>
+          <line>22</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>177</line>
+          <line>185</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>147</line>
-          <option name="timeStamp" value="42" />
+          <line>359</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>161</line>
-          <option name="timeStamp" value="43" />
+          <line>45</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>306</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

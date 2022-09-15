@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CourseInfo>
+    <Course>
+        <Name value="CPSC 501"/>
+        <Faculty value="COMPUTERSCIENCE"/>
+    </Course>
+    <Course>
+        <Name value="ACCT 201"/>
+        <Faculty value="BUSINESS"/>
+    </Course>
+    <Course>
+        <Name value="ARTS 322"/>
+        <Faculty value="ARTS"/>
+    </Course>
+</CourseInfo>

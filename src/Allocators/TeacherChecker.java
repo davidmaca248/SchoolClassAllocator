@@ -25,6 +25,10 @@ public class TeacherChecker {
         CourseList = courseList;
     }
 
+    public List<CourseTeacherPair> GetPairResults(){
+        return ResultPairs;
+    }
+
     public List<CourseTeacherPair> AssignCourses(){
         for (int i = 0; i < CourseList.size(); i++) {
             CourseTeacherPair p = new CourseTeacherPair();

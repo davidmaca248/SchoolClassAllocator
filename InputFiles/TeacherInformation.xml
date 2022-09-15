@@ -7,6 +7,13 @@
         <Faculty value="COMPUTERSCIENCE"/>
         <Level value="PROFESSOR"/>
     </Teacher>
+    <Teacher>
+        <Id value="43"/>
+        <Name value="Max Reeves"/>
+        <Address value="5345232 Country Hills Way NW"/>
+        <Faculty value="COMPUTERSCIENCE"/>
+        <Level value="TEACHINGASSISTANT"/>
+    </Teacher>
 
     <Teacher>
         <Id value="43"/>
@@ -18,9 +25,32 @@
 
     <Teacher>
         <Id value="64"/>
-        <Name value="Chris Brown"/>
-        <Address value="5322 Panorama Hills Drive NE"/>
+        <Name value="Chris Breezy"/>
+        <Address value="23222 Country Hills Cove NE"/>
         <Faculty value="BUSINESS"/>
         <Level value="TEACHINGASSISTANT"/>
+    </Teacher>
+
+    <Teacher>
+        <Id value="96"/>
+        <Name value="Vito Corleone"/>
+        <Address value="234 Panorama Hills Drive NE"/>
+        <Faculty value="BUSINESS"/>
+        <Level value="PROFESSOR"/>
+    </Teacher>
+
+    <Teacher>
+        <Id value="64"/>
+        <Name value="Chris Brown"/>
+        <Address value="5322 Panorama Hills Drive NE"/>
+        <Faculty value="ARTS"/>
+        <Level value="PROFESSOR"/>
+    </Teacher>
+    <Teacher>
+        <Id value="74"/>
+        <Name value="Michael Jackson"/>
+        <Address value="42342 Panorama Hills Drive NE"/>
+        <Faculty value="ARTS"/>
+        <Level value="PROFESSOR"/>
     </Teacher>
 </TeacherInfo>

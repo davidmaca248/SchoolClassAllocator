@@ -2,6 +2,8 @@ import Allocators.StudentChecker;
 import Allocators.TeacherChecker;
 import Helpers.Helpers;
 import Helpers.StudentCoursePair;
+import Helpers.CourseTeacherPair;
+import Models.Course;
 import Models.Student;
 import Models.Teacher;
 import org.w3c.dom.Document;
@@ -22,11 +24,14 @@ public class Main {
 
     public static List<Student> studentList;
     public static List<Teacher> teacherList;
+    public static List<Course> courseList;
+    
     public static void main(String[] args) {
 
         studentList = GetStudentIntoList();
         teacherList = GetTeacherIntoList();
-
+        courseList = GetCourseIntoList();
+        
         double threshold = 3.0;
 
         // call sorting algorithm for students
@@ -34,15 +39,13 @@ public class Main {
         studentChecker.SortStudents();
 
         // call sorting algorithm for teachers
-        TeacherChecker teacherChecker = new TeacherChecker(teacherList, );
-
-        // write to output of students
-        // write to output of teachers
+        TeacherChecker teacherChecker = new TeacherChecker(teacherList, courseList);
+        teacherChecker.AssignCourses();
 
         String studentOutput = "./OutputFiles/StudentOutput.txt";
         String teacherOutput = "./OutputFiles/TeacherOutput.txt";
 
-        // write students
+        // write to output of students
         try {
             BufferedWriter studentWriter = new BufferedWriter(new FileWriter(studentOutput));
 
@@ -57,14 +60,17 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        // write teachers
+        // write to output of teachers
         try {
             BufferedWriter teacherWriter = new BufferedWriter(new FileWriter(teacherOutput));
 
-            for (Teacher t : teacherList
+            for (CourseTeacherPair sp : teacherChecker.GetPairResults()
             ) {
-                teacherWriter.write("Teacher name: " + t.Name + "\n");
+                teacherWriter.write("Course name: " + sp.GetCourse());
+                teacherWriter.write(", Professor name: " + sp.GetProfessor());
+                teacherWriter.write(", Teaching Assistant name: " + sp.GetTeachingAssistant() + "\n");
             }
+
             teacherWriter.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -277,5 +283,83 @@ public class Main {
         }
 
         return teacherLst;
+    }
+
+    public static List<Course> GetCourseIntoList(){
+
+        List<Course> courseLst = new ArrayList<Course>();
+
+        String courseFilePath = "./InputFiles/CourseInformation.xml";
+
+        File file = new File(courseFilePath);
+
+        try {
+            if (file.exists()) {
+                DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+
+                DocumentBuilder builder = factory.newDocumentBuilder();
+                Document doc = builder.parse(courseFilePath);
+                doc.getDocumentElement().normalize();
+
+                NodeList courses = doc.getElementsByTagName("Course");
+
+                int k = courses.getLength();
+                for (int i = 0; i < courses.getLength(); i++) {
+                    Node course = courses.item(i);
+
+                    Course c = new Course();
+
+                    // get course
+                    if (course.getNodeType() == Node.ELEMENT_NODE) {
+                        Element elem = (Element) course;
+
+                        // get course's elements
+                        NodeList children = course.getChildNodes();
+                        for (int j = 0; j < children.getLength(); j++) {
+                            Node child = children.item(j);
+
+                            if (child.getNodeType() == Node.ELEMENT_NODE) {
+                                Element courseElem = (Element) child;
+                                var name = courseElem.getTagName();
+
+                                switch (name) {
+                                    case "Name":
+                                        c.SetName(courseElem.getAttribute("value"));
+                                        break;
+                                    case "Faculty":
+                                        switch (courseElem.getAttribute("value")) {
+                                            case "ARTS":
+                                                c.SetFaculty(Helpers.Faculty.ARTS);
+                                                break;
+                                            case "BUSINESS":
+                                                c.SetFaculty(Helpers.Faculty.BUSINESS);
+                                                break;
+                                            case "SOFTWAREENGINEERING":
+                                                c.SetFaculty(Helpers.Faculty.SOFTWAREENGINEERING);
+                                                break;
+                                            case "COMPUTERSCIENCE":
+                                                c.SetFaculty(Helpers.Faculty.COMPUTERSCIENCE);
+                                                break;
+                                            case "MATH":
+                                                c.SetFaculty(Helpers.Faculty.MATH);
+                                                break;
+                                            default:
+                                                c.SetFaculty(Helpers.Faculty.UNKNOWN);
+                                                break;
+                                        }
+                                        break;
+                                }
+                            }
+                        }
+                        courseLst.add(c);
+                    }
+                }
+            }
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+
+        return courseLst;
     }
 }
