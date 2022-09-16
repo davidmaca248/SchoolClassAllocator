@@ -1,7 +1,6 @@
 package Tests;
 
 import Allocators.StudentChecker;
-import Helpers.StudentCoursePair;
 import Models.Student;
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
@@ -20,13 +19,13 @@ class StudentCheckerTest {
 
     @org.junit.jupiter.api.BeforeEach
      void setUp() {
-        Majors = new ArrayList<String>();
+        Majors = new ArrayList<>();
         Majors.add("COMPUTERSCIENCE");
         Majors.add("MATH");
         Majors.add("ARTS");
         Majors.add("BUSINESS");
 
-        Minors = new ArrayList<String>();
+        Minors = new ArrayList<>();
         Minors.add("MATH");
         Minors.add("COMPUTERSCIENCE");
         Minors.add("SOFTWAREENGINEERING");
@@ -34,7 +33,7 @@ class StudentCheckerTest {
         
         threshold = 3.0;
 
-        studentList = new ArrayList<Student>();
+        studentList = new ArrayList<>();
 
     }
 
@@ -70,7 +69,7 @@ class StudentCheckerTest {
         instance.SortStudents();
 
         // Check that all students recieved minors
-        List<StudentCoursePair> pairs = instance.GetPairResults();
+        var pairs = instance.GetPairResults();
 
         for (int i = 0; i < pairs.size();i++) {
             assertEquals(Majors.get(i), pairs.get(i).assignedCourse().toString());
@@ -89,8 +88,8 @@ class StudentCheckerTest {
 
         instance.SortStudents();
 
-        // Check that all students recieved minors
-        List<StudentCoursePair> pairs = instance.GetPairResults();
+        // Check that all students received minors
+        var pairs = instance.GetPairResults();
 
         for (int i = 0; i < pairs.size();i++) {
             assertEquals(Minors.get(i), pairs.get(i).assignedCourse().toString());

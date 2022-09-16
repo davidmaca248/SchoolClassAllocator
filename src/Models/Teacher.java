@@ -11,7 +11,8 @@ public class Teacher extends Person {
     private InstructorLevel level;
 
     public Teacher(){}
-    public Teacher(String id, String name, String address, String newLevel, String newFaculty){
+    public Teacher(String id, String name, String address,
+                   String newLevel, String newFaculty){
         Name = name;
         Address = address;
         Id = id;

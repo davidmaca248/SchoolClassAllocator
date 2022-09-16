@@ -36,7 +36,10 @@ public class TeacherChecker {
             Course c = CourseList.get(i);
             p.SetCourse(c.GetName());
 
-            // professor
+            // indicator for assignment
+            boolean teacherExists = false;
+
+            // Assign Professor
             for(int j = 0; j < TeacherList.size(); j++){
                 Teacher t = TeacherList.get(j);
 
@@ -44,11 +47,12 @@ public class TeacherChecker {
                 if(c.GetFaculty() == t.GetFaculty() && t.GetLevel() == Helpers.InstructorLevel.PROFESSOR){
                     p.SetProfessor(t.GetName());
                     TeacherList.remove(j);
+                    teacherExists = true;
                     break;
                 }
             }
 
-            // Set Teaching Assistant
+            // Assign Teaching Assistant
             for(int k = 0; k < TeacherList.size(); k++){
                 Teacher t = TeacherList.get(k);
 
@@ -56,12 +60,12 @@ public class TeacherChecker {
                 if(c.GetFaculty() == t.GetFaculty() && t.GetLevel() == Helpers.InstructorLevel.TEACHINGASSISTANT){
                     p.SetTeachingAssistant(t.GetName());
                     TeacherList.remove(k);
+                    teacherExists = true;
                     break;
                 }
             }
 
-            ResultPairs.add(p);
-
+            if(teacherExists){ResultPairs.add(p);}
         }
         return ResultPairs;
     }

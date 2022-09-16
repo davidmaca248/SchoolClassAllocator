@@ -2,30 +2,34 @@ package Models;
 
 import Helpers.Helpers.Faculty;
 
-import java.util.ArrayList;
-
 public class Course {
 
-    public String Name;
+    public String name;
     public Faculty faculty;
     public Course(){
 
-        Name = "";
+        name = "";
         faculty = Faculty.UNKNOWN;
     }
 
+    public Course(String newName, Faculty newFaculty){
+
+        name = newName;
+        faculty = newFaculty;
+    }
+
     public String GetName(){
-        return Name;
+        return name;
     }
     public Faculty GetFaculty(){
         return faculty;
     }
 
-    public void SetName(String name){
-        Name = name;
+    public void SetName(String newName){
+        name = newName;
     }
 
-    public void SetFaculty (Helpers.Helpers.Faculty newFaculty){
+    public void SetFaculty (Faculty newFaculty){
         faculty = newFaculty;
     }
 }
