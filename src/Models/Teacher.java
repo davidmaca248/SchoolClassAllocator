@@ -42,6 +42,9 @@ public class Teacher extends Person {
             case "COMPUTERSCIENCE":
                 faculty = Faculty.COMPUTERSCIENCE;
                 break;
+            case "MATH":
+                faculty = Faculty.MATH;
+                break;
             default:
                 faculty = Faculty.UNKNOWN;
                 break;

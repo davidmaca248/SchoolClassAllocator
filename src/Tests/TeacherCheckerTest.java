@@ -22,13 +22,9 @@ class TeacherCheckerTest {
 
     @BeforeEach
     void setUp() {
-        // populate teacherList
         teacherList = new ArrayList<>();
 
-
-        // populate courseList
         courseList = new ArrayList<>();
-        courseList.add(new Course("CPSC 501", Faculty.COMPUTERSCIENCE));
     }
 
     @AfterEach
@@ -66,11 +62,24 @@ class TeacherCheckerTest {
 
     @Test
     void assignCoursesLessOrEqualCoursesThanTeachers(){
-        teacherList.add(new Teacher("21", "James Franco", "213 CovePark NE", "TEACHINGASSISTANT", "COMPUTERSCIENCE"));
+        String name1 = "James Franco";
+        String name2 = "Dave Gun";
+        String name3 = "Max Russel";
+
+        courseList.add(new Course("CPSC 501", Faculty.COMPUTERSCIENCE));
+        courseList.add(new Course("MATH 331", Faculty.MATH));
+        teacherList.add(new Teacher("21", name1, "213 CovePark NE", "PROFESSOR", "COMPUTERSCIENCE"));
+        teacherList.add(new Teacher("22", name2, "4234 CovePark NE", "TEACHINGASSISTANT", "COMPUTERSCIENCE"));
+        teacherList.add(new Teacher("24", name3, "2133 Country NE", "PROFESSOR", "MATH"));
+
+        instance = new TeacherChecker(teacherList,courseList);
         instance.AssignCourses();
 
         var result = instance.ResultPairs;
 
-
+        assertEquals(name1, result.get(0).GetProfessor());
+        assertEquals(name2, result.get(0).GetTeachingAssistant());
+        assertEquals(name3, result.get(1).GetProfessor());
+        assertEquals("", result.get(1).GetTeachingAssistant());
     }
 }
