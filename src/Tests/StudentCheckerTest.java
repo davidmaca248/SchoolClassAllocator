@@ -72,7 +72,7 @@ class StudentCheckerTest {
         var pairs = instance.GetPairResults();
 
         for (int i = 0; i < pairs.size();i++) {
-            assertEquals(Majors.get(i), pairs.get(i).assignedCourse().toString());
+            assertEquals(Majors.get(i), pairs.get(i).Course.toString());
         }
     }
 
@@ -92,7 +92,7 @@ class StudentCheckerTest {
         var pairs = instance.GetPairResults();
 
         for (int i = 0; i < pairs.size();i++) {
-            assertEquals(Minors.get(i), pairs.get(i).assignedCourse().toString());
+            assertEquals(Minors.get(i), pairs.get(i).Course.toString());
         }
     }
 }

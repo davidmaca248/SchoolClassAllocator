@@ -79,7 +79,7 @@ public class Main {
 
     public static List<Student> GetStudentIntoList(){
 
-        List<Student> studentLst = new ArrayList<Student>();
+        List<Student> studentLst = new ArrayList<>();
 
         String studentFilePath = "./InputFiles/StudentInformation.xml";
 

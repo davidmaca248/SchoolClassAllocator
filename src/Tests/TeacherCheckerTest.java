@@ -7,10 +7,8 @@ import Models.Teacher;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class TeacherCheckerTest {
@@ -78,9 +76,9 @@ class TeacherCheckerTest {
 
         var result = instance.Pairs;
 
-        assertEquals(name1, result.get(0).GetProfessor());
-        assertEquals(name2, result.get(0).GetTeachingAssistant());
-        assertEquals(name3, result.get(1).GetProfessor());
-        assertEquals("", result.get(1).GetTeachingAssistant());
+        assertEquals(name1, result.get(0).Professor);
+        assertEquals(name2, result.get(0).TA);
+        assertEquals(name3, result.get(1).Professor);
+        assertEquals("", result.get(1).TA);
     }
 }
