@@ -40,7 +40,9 @@ class TeacherCheckerTest {
 
     @Test
     void initializeListsOnNonDefaultConstructor(){
-        instance = new TeacherChecker(teacherList,courseList);
+        instance = new TeacherChecker();
+        instance.TeacherList = teacherList;
+        instance.CourseList = courseList;
 
         assertEquals(teacherList, instance.TeacherList);
         assertEquals(courseList, instance.CourseList);
@@ -50,7 +52,9 @@ class TeacherCheckerTest {
     @Test
     void assignCoursesLessTeachersThanCourses(){
         courseList.add(new Course("CPSC 501", Faculty.COMPUTERSCIENCE));
-        instance = new TeacherChecker(teacherList,courseList);
+        instance = new TeacherChecker();
+        instance.TeacherList = teacherList;
+        instance.CourseList = courseList;
         instance.CheckerAssign();
 
         var result = instance.Pairs;
@@ -71,7 +75,9 @@ class TeacherCheckerTest {
         teacherList.add(new Teacher("22", name2, "4234 CovePark NE", "TEACHINGASSISTANT", "COMPUTERSCIENCE"));
         teacherList.add(new Teacher("24", name3, "2133 Country NE", "PROFESSOR", "MATH"));
 
-        instance = new TeacherChecker(teacherList,courseList);
+        instance = new TeacherChecker();
+        instance.TeacherList = teacherList;
+        instance.CourseList = courseList;
         instance.CheckerAssign();
 
         var result = instance.Pairs;

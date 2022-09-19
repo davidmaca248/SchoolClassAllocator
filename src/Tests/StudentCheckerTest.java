@@ -49,7 +49,9 @@ class StudentCheckerTest {
         studentList.add(new Student("23", "Danny Low", "23 Pano Way SE", Majors.get(2), Minors.get(2), 2.3));
         studentList.add(new Student("24", "Marie Jay", "65 Stone Way NW", Majors.get(3), Minors.get(3), 1.6));
 
-        instance = new StudentChecker(threshold,studentList);
+        instance = new StudentChecker();
+        instance.Threshold = threshold;
+        instance.StudentList = studentList;
 
         // Check that PairResults is empty
         assertTrue (instance.GetPairResults().isEmpty());
@@ -64,7 +66,9 @@ class StudentCheckerTest {
         studentList.add(new Student("23", "Danny Low", "23 Pano Way SE", Majors.get(2), Minors.get(2), 3.3));
         studentList.add(new Student("24", "Marie Jay", "65 Stone Way NW", Majors.get(3), Minors.get(3), 3.6));
 
-        instance = new StudentChecker(threshold,studentList);
+        instance = new StudentChecker();
+        instance.Threshold = threshold;
+        instance.StudentList = studentList;
 
         instance.Sort();
 
@@ -84,7 +88,9 @@ class StudentCheckerTest {
         studentList.add(new Student("23", "Danny Low", "23 Pano Way SE", Majors.get(2), Minors.get(2), 2.3));
         studentList.add(new Student("24", "Marie Jay", "65 Stone Way NW", Majors.get(3), Minors.get(3), 1.6));
 
-        instance = new StudentChecker(threshold,studentList);
+        instance = new StudentChecker();
+        instance.Threshold = threshold;
+        instance.StudentList = studentList;
 
         instance.Sort();
 

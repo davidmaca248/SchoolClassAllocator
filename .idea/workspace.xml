@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8fa8e47e-ab20-4932-8572-65d55c799c22" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tests/StudentCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/StudentCheckerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tests/TeacherCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TeacherCheckerTest.java" afterDir="false" />
     </list>
@@ -169,7 +168,7 @@
       <workItem from="1663258032133" duration="1488000" />
       <workItem from="1663269312797" duration="5348000" />
       <workItem from="1663351283449" duration="6773000" />
-      <workItem from="1663601519346" duration="2490000" />
+      <workItem from="1663601519346" duration="5500000" />
     </task>
     <servers />
   </component>
