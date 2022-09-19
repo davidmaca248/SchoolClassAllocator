@@ -1,0 +1,3 @@
+Course name: CPSC 501, Professor name: Tim Tatum, Teaching Assistant name: Max Reeves
+Course name: ACCT 201, Professor name: Vito Corleone, Teaching Assistant name: Chris Breezy
+Course name: ARTS 322, Professor name: Chris Brown, Teaching Assistant name: Michael Jackson
