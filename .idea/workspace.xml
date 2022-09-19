@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fa8e47e-ab20-4932-8572-65d55c799c22" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/StudentCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/StudentCheckerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TeacherCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TeacherCheckerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Helpers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +62,14 @@
       <recent name="Allocators" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests in SchoolClassAllocator">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="SchoolClassAllocator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentCheckerTest.SortStudentAllGetMinor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SchoolClassAllocator" />
       <extension name="coverage">
@@ -113,22 +118,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeacherCheckerTest.initializeListsOnNonDefaultConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SchoolClassAllocator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TeacherCheckerTest" />
-      <option name="METHOD_NAME" value="initializeListsOnNonDefaultConstructor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tests in SchoolClassAllocator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SchoolClassAllocator" />
       <extension name="coverage">
@@ -145,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.Tests in SchoolClassAllocator" />
         <item itemvalue="JUnit.StudentCheckerTest.SortStudentAllGetMinor" />
         <item itemvalue="JUnit.TeacherCheckerTest.assignCoursesLessTeachersThanCourses" />
         <item itemvalue="JUnit.TeacherCheckerTest.assignCoursesLessOrEqualCoursesThanTeachers" />
-        <item itemvalue="JUnit.TeacherCheckerTest.initializeListsOnNonDefaultConstructor" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +157,7 @@
       <workItem from="1663258032133" duration="1488000" />
       <workItem from="1663269312797" duration="5348000" />
       <workItem from="1663351283449" duration="6773000" />
-      <workItem from="1663601519346" duration="5500000" />
+      <workItem from="1663601519346" duration="5690000" />
     </task>
     <servers />
   </component>

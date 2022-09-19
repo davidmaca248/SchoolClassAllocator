@@ -9,8 +9,4 @@ public class Helpers {
     public enum Faculty{
         COMPUTERSCIENCE, SOFTWAREENGINEERING, BUSINESS, MATH, ARTS, UNKNOWN;
     }
-
-    public enum Course{
-        CPSC481, CPSC501, CPSC525
-    }
 }
