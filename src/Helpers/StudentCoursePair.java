@@ -4,8 +4,8 @@ import Helpers.Helpers.Faculty;
 
 public class StudentCoursePair
 {
-    private String Name;
-    private Faculty Course;
+    public String Name;
+    public Faculty Course;
 
     public StudentCoursePair(){
         Name = "";

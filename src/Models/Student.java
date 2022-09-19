@@ -1,6 +1,4 @@
 package Models;
-
-import static Helpers.Helpers.SchoolIdGenerator;
 import Helpers.Helpers.Faculty;
 
 public class Student extends Person{
@@ -14,7 +12,7 @@ public class Student extends Person{
                    String major, String minor, double grade){
         Name = name;
         Address = address;
-        Id = SchoolIdGenerator();
+        Id = id;
         Grade = grade;
 
         switch (major){

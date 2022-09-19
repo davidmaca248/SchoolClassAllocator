@@ -12,24 +12,24 @@ public class TeacherChecker {
 
     public List<Teacher> TeacherList;
     public List<Course> CourseList;
-    public List<CourseTeacherPair> ResultPairs;
+    public List<CourseTeacherPair> Pairs;
     public TeacherChecker(){
-        ResultPairs = new ArrayList<CourseTeacherPair>();
+        Pairs = new ArrayList<CourseTeacherPair>();
         TeacherList = new ArrayList<Teacher>();
         CourseList = new ArrayList<Course>();
     }
 
     public TeacherChecker(List<Teacher> teacherList, List<Course> courseList){
-        ResultPairs = new ArrayList<CourseTeacherPair>();
+        Pairs = new ArrayList<CourseTeacherPair>();
         TeacherList = teacherList;
         CourseList = courseList;
     }
 
     public List<CourseTeacherPair> GetPairResults(){
-        return ResultPairs;
+        return Pairs;
     }
 
-    public List<CourseTeacherPair> AssignCourses(){
+    public List<CourseTeacherPair> CheckerAssign(){
         for (int i = 0; i < CourseList.size(); i++) {
             CourseTeacherPair p = new CourseTeacherPair();
 
@@ -39,7 +39,7 @@ public class TeacherChecker {
             // indicator for assignment
             boolean teacherExists = false;
 
-            // Assign Professor
+            // CheckerAssign Professor
             for(int j = 0; j < TeacherList.size(); j++){
                 Teacher t = TeacherList.get(j);
 
@@ -52,7 +52,7 @@ public class TeacherChecker {
                 }
             }
 
-            // Assign Teaching Assistant
+            // CheckerAssign Teaching Assistant
             for(int k = 0; k < TeacherList.size(); k++){
                 Teacher t = TeacherList.get(k);
 
@@ -65,9 +65,10 @@ public class TeacherChecker {
                 }
             }
 
-            if(teacherExists){ResultPairs.add(p);}
+            if(teacherExists){
+                Pairs.add(p);}
         }
-        return ResultPairs;
+        return Pairs;
     }
 
 }

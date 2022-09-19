@@ -66,7 +66,7 @@ class StudentCheckerTest {
 
         instance = new StudentChecker(threshold,studentList);
 
-        instance.SortStudents();
+        instance.Sort();
 
         // Check that all students recieved minors
         var pairs = instance.GetPairResults();
@@ -86,7 +86,7 @@ class StudentCheckerTest {
 
         instance = new StudentChecker(threshold,studentList);
 
-        instance.SortStudents();
+        instance.Sort();
 
         // Check that all students received minors
         var pairs = instance.GetPairResults();

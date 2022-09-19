@@ -37,7 +37,7 @@ class TeacherCheckerTest {
 
         assertTrue(instance.TeacherList.isEmpty());
         assertTrue(instance.CourseList.isEmpty());
-        assertTrue(instance.ResultPairs.isEmpty());
+        assertTrue(instance.Pairs.isEmpty());
     }
 
     @Test
@@ -46,18 +46,19 @@ class TeacherCheckerTest {
 
         assertEquals(teacherList, instance.TeacherList);
         assertEquals(courseList, instance.CourseList);
-        assertTrue(instance.ResultPairs.isEmpty());
+        assertTrue(instance.Pairs.isEmpty());
     }
 
     @Test
     void assignCoursesLessTeachersThanCourses(){
         courseList.add(new Course("CPSC 501", Faculty.COMPUTERSCIENCE));
-        instance.AssignCourses();
+        instance = new TeacherChecker(teacherList,courseList);
+        instance.CheckerAssign();
 
-        var result = instance.ResultPairs;
+        var result = instance.Pairs;
 
         // verify that there are no course pairs
-        assertTrue(instance.ResultPairs.isEmpty());
+        assertTrue(instance.Pairs.isEmpty());
     }
 
     @Test
@@ -73,9 +74,9 @@ class TeacherCheckerTest {
         teacherList.add(new Teacher("24", name3, "2133 Country NE", "PROFESSOR", "MATH"));
 
         instance = new TeacherChecker(teacherList,courseList);
-        instance.AssignCourses();
+        instance.CheckerAssign();
 
-        var result = instance.ResultPairs;
+        var result = instance.Pairs;
 
         assertEquals(name1, result.get(0).GetProfessor());
         assertEquals(name2, result.get(0).GetTeachingAssistant());

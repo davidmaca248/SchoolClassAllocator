@@ -1,14 +1,13 @@
 package Models;
 
-import static Helpers.Helpers.SchoolIdGenerator;
 import Helpers.Helpers.Faculty;
 import Helpers.Helpers.InstructorLevel;
 
 
 public class Teacher extends Person {
 
-    private Faculty faculty;
-    private InstructorLevel level;
+    public Faculty faculty;
+    public InstructorLevel level;
 
     public Teacher(){}
     public Teacher(String id, String name, String address,

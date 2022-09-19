@@ -9,20 +9,20 @@ import java.util.List;
 //
 public class StudentChecker {
 
-    private double Threshold;
-    private List<Student> StudentList;
+    public double Threshold;
+    public List<Student> StudentList;
 
-    private List<StudentCoursePair> PairResults;
+    public List<StudentCoursePair> Pairs;
 
     public StudentChecker(){
         Threshold = 2.0;
         StudentList = new ArrayList<Student>();
-        PairResults = new ArrayList<StudentCoursePair>();
+        Pairs = new ArrayList<StudentCoursePair>();
     }
     public StudentChecker(double threshold, List<Student> studentList){
         Threshold = threshold;
         StudentList = studentList;
-        PairResults = new ArrayList<StudentCoursePair>();
+        Pairs = new ArrayList<StudentCoursePair>();
     }
 
     public List<Student> GetStudentList(){
@@ -33,7 +33,7 @@ public class StudentChecker {
     }
 
     public List<StudentCoursePair> GetPairResults(){
-        return PairResults;
+        return Pairs;
     }
 
     public void SetStudentList(List<Student> studentList){
@@ -43,17 +43,17 @@ public class StudentChecker {
         Threshold = threshold;
     }
 
-    public List<StudentCoursePair> SortStudents(){
+    public List<StudentCoursePair> Sort(){
         for (Student s: StudentList) {
 
             if(s.Grade >= Threshold){
                 StudentCoursePair pair = new StudentCoursePair(s.Name, s.GetMajor());
-                PairResults.add(pair);
+                Pairs.add(pair);
             } else{
                 StudentCoursePair pair = new StudentCoursePair(s.Name, s.GetMinor());
-                PairResults.add(pair);
+                Pairs.add(pair);
             }
         }
-        return PairResults;
+        return Pairs;
     }
 }

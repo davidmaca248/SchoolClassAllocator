@@ -36,11 +36,11 @@ public class Main {
 
         // call sorting algorithm for students
         StudentChecker studentChecker = new StudentChecker(threshold, studentList);
-        studentChecker.SortStudents();
+        studentChecker.Sort();
 
         // call sorting algorithm for teachers
         TeacherChecker teacherChecker = new TeacherChecker(teacherList, courseList);
-        teacherChecker.AssignCourses();
+        teacherChecker.CheckerAssign();
 
         String studentOutput = "./OutputFiles/StudentOutput.txt";
         String teacherOutput = "./OutputFiles/TeacherOutput.txt";

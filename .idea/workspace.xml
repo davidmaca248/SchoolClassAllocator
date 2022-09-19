@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="8fa8e47e-ab20-4932-8572-65d55c799c22" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Allocators/StudentChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Allocators/StudentChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Allocators/TeacherChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Allocators/TeacherChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/CourseTeacherPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/CourseTeacherPair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Helpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/StudentCoursePair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/StudentCoursePair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/StudentCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/StudentCheckerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tests/TeacherCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TeacherCheckerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,37 +72,7 @@
       <recent name="Allocators" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TeacherCheckerTest.assignCoursesLessOrEqualCoursesThanTeachers">
-    <configuration name="StudentCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SchoolClassAllocator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.StudentCheckerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TeacherCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SchoolClassAllocator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TeacherCheckerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Tests in SchoolClassAllocator">
     <configuration name="TeacherCheckerTest.assignCoursesLessOrEqualCoursesThanTeachers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SchoolClassAllocator" />
       <extension name="coverage">
@@ -106,6 +84,22 @@
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.TeacherCheckerTest" />
       <option name="METHOD_NAME" value="assignCoursesLessOrEqualCoursesThanTeachers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeacherCheckerTest.assignCoursesLessTeachersThanCourses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SchoolClassAllocator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TeacherCheckerTest" />
+      <option name="METHOD_NAME" value="assignCoursesLessTeachersThanCourses" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,13 +137,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tests in SchoolClassAllocator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SchoolClassAllocator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests in SchoolClassAllocator" />
+        <item itemvalue="JUnit.TeacherCheckerTest.assignCoursesLessTeachersThanCourses" />
         <item itemvalue="JUnit.TeacherCheckerTest.assignCoursesLessOrEqualCoursesThanTeachers" />
         <item itemvalue="JUnit.TeacherCheckerTest.initializeListsOnNonDefaultConstructor" />
         <item itemvalue="JUnit.TeacherCheckerTest.initializeEmptyListsOnDefaultConstructor" />
-        <item itemvalue="JUnit.TeacherCheckerTest" />
-        <item itemvalue="JUnit.StudentCheckerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +175,8 @@
       <workItem from="1663177510459" duration="8486000" />
       <workItem from="1663258032133" duration="1488000" />
       <workItem from="1663269312797" duration="5348000" />
-      <workItem from="1663351283449" duration="6152000" />
+      <workItem from="1663351283449" duration="6773000" />
+      <workItem from="1663601519346" duration="1393000" />
     </task>
     <servers />
   </component>
@@ -214,13 +223,8 @@
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Models/Student.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Allocators/TeacherChecker.java</url>
-          <line>69</line>
+          <line>70</line>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

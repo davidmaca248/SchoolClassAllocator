@@ -1,23 +1,21 @@
 package Helpers;
 
-import Allocators.TeacherChecker;
-
 public class CourseTeacherPair {
 
-    private String Course;
-    private String Professor;
-    private String TeachingAssistant;
+    public String Course;
+    public String Professor;
+    public String TA;
 
     public CourseTeacherPair(){
         Course = "";
         Professor = "";
-        TeachingAssistant = "";
+        TA = "";
     }
 
-    public CourseTeacherPair(String course, String professor, String teachingAssistant){
+    public CourseTeacherPair(String course, String professor, String ta){
         Course = course;
         Professor = professor;
-        TeachingAssistant = teachingAssistant;
+        TA = ta;
     }
 
     public void SetCourse(String course){
@@ -29,7 +27,7 @@ public class CourseTeacherPair {
     }
 
     public void SetTeachingAssistant(String teachingAssistant){
-        TeachingAssistant = teachingAssistant;
+        TA = teachingAssistant;
     }
 
     public String GetCourse(){
@@ -41,6 +39,6 @@ public class CourseTeacherPair {
     }
 
     public String GetTeachingAssistant(){
-        return TeachingAssistant;
+        return TA;
     }
 }
