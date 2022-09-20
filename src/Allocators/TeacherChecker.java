@@ -1,6 +1,5 @@
 package Allocators;
 
-import Helpers.CourseTeacherPair;
 import Helpers.Helpers;
 import Models.Course;
 import Models.Teacher;
@@ -12,29 +11,49 @@ public class TeacherChecker {
 
     public List<Teacher> TeacherList;
     public List<Course> CourseList;
-    public List<CourseTeacherPair> Pairs;
+
+    public String[] courseResults;
+    public String[] professorResults;
+    public String[] teachingAssistantResults;
+    public int arraySize = 0;
     public TeacherChecker(){
-        Pairs = new ArrayList<CourseTeacherPair>();
         TeacherList = new ArrayList<Teacher>();
         CourseList = new ArrayList<Course>();
+        courseResults = new String[100];
+        professorResults = new String[100];
+        teachingAssistantResults = new String[100];
     }
 
     public TeacherChecker(List<Teacher> teacherList, List<Course> courseList){
-        Pairs = new ArrayList<CourseTeacherPair>();
         TeacherList = teacherList;
         CourseList = courseList;
+        courseResults = new String[100];
+        professorResults = new String[100];
+        teachingAssistantResults = new String[100];
     }
 
-    public List<CourseTeacherPair> GetPairResults(){
-        return Pairs;
+    public String[] GetCourseResults(){
+        return courseResults;
+    }
+    public String[] GetProfessorResults(){
+        return professorResults;
+    }
+    public String[] GetTeachingAssistantResults(){
+        return teachingAssistantResults;
     }
 
-    public List<CourseTeacherPair> CheckerAssign(){
+    public void CheckerAssign(){
+
+        // array index tracker
+        int l = 0;
+
         for (int i = 0; i < CourseList.size(); i++) {
-            CourseTeacherPair p = new CourseTeacherPair();
+            String courseResult = "";
+            String professorResult = "";
+            String teachingAssistantResult = "";
 
             Course c = CourseList.get(i);
-            p.SetCourse(c.GetName());
+            courseResult = c.GetName();
 
             // indicator for assignment
             boolean teacherExists = false;
@@ -45,7 +64,7 @@ public class TeacherChecker {
 
                 // if Faculties Match, set professor
                 if(c.GetFaculty() == t.GetFaculty() && t.GetLevel() == Helpers.InstructorLevel.PROFESSOR){
-                    p.SetProfessor(t.GetName());
+                    professorResult = t.GetName();
                     TeacherList.remove(j);
                     teacherExists = true;
                     break;
@@ -58,7 +77,7 @@ public class TeacherChecker {
 
                 // if Faculties Match, set TA
                 if(c.GetFaculty() == t.GetFaculty() && t.GetLevel() == Helpers.InstructorLevel.TEACHINGASSISTANT){
-                    p.SetTeachingAssistant(t.GetName());
+                    teachingAssistantResult = t.GetName();
                     TeacherList.remove(k);
                     teacherExists = true;
                     break;
@@ -66,9 +85,13 @@ public class TeacherChecker {
             }
 
             if(teacherExists){
-                Pairs.add(p);}
+                courseResults[l] = courseResult;
+                professorResults[l] = professorResult;
+                teachingAssistantResults[l] = teachingAssistantResult;
+                arraySize++;
+                l++;
+            }
         }
-        return Pairs;
     }
 
 }

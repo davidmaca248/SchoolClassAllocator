@@ -1,8 +1,6 @@
 import Allocators.StudentChecker;
 import Allocators.TeacherChecker;
 import Helpers.Helpers;
-import Helpers.StudentCoursePair;
-import Helpers.CourseTeacherPair;
 import Models.Course;
 import Models.Student;
 import Models.Teacher;
@@ -49,10 +47,12 @@ public class Main {
         try {
             BufferedWriter studentWriter = new BufferedWriter(new FileWriter(studentOutput));
 
-            for (StudentCoursePair sp : studentChecker.GetPairResults()
-                 ) {
-                studentWriter.write("Student name: " + sp.name());
-                studentWriter.write(", Assigned Faculty: " + sp.assignedCourse() + "\n");
+            var courses = studentChecker.GetCourseResults();
+            var students = studentChecker.GetStudentResults();
+
+            for(int j = 0; j < studentChecker.arraySize; j++){
+                studentWriter.write("Student name: " + students[j]);
+                studentWriter.write(", Assigned Faculty: " + courses[j] + "\n");
             }
 
             studentWriter.close();
@@ -64,11 +64,14 @@ public class Main {
         try {
             BufferedWriter teacherWriter = new BufferedWriter(new FileWriter(teacherOutput));
 
-            for (CourseTeacherPair sp : teacherChecker.GetPairResults()
-            ) {
-                teacherWriter.write("Course name: " + sp.GetCourse());
-                teacherWriter.write(", Professor name: " + sp.GetProfessor());
-                teacherWriter.write(", Teaching Assistant name: " + sp.GetTeachingAssistant() + "\n");
+            var courses = teacherChecker.GetCourseResults();
+            var professors = teacherChecker.GetProfessorResults();
+            var teachingAssistants = teacherChecker.GetTeachingAssistantResults();
+
+            for(int i = 0; i < teacherChecker.arraySize; i++){
+                teacherWriter.write("Course name: " + courses[i]);
+                teacherWriter.write(", Professor name: " + professors[i]);
+                teacherWriter.write(", Teaching Assistant name: " + teachingAssistants[i] + "\n");
             }
 
             teacherWriter.close();

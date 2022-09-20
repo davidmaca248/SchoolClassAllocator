@@ -1,6 +1,5 @@
 package Allocators;
 
-import Helpers.StudentCoursePair;
 import Models.Student;
 
 import java.util.ArrayList;
@@ -12,17 +11,22 @@ public class StudentChecker {
     public double Threshold;
     public List<Student> StudentList;
 
-    public List<StudentCoursePair> Pairs;
+    public String[] courseResults;
+    public String[] studentResults;
 
+    public int arraySize = 0;
     public StudentChecker(){
         Threshold = 2.0;
         StudentList = new ArrayList<Student>();
-        Pairs = new ArrayList<StudentCoursePair>();
+        studentResults = new String[100];
+        courseResults = new String[100];
     }
     public StudentChecker(double threshold, List<Student> studentList){
         Threshold = threshold;
         StudentList = studentList;
-        Pairs = new ArrayList<StudentCoursePair>();
+        arraySize = StudentList.size();
+        studentResults = new String[100];
+        courseResults = new String[100];
     }
 
     public List<Student> GetStudentList(){
@@ -32,28 +36,31 @@ public class StudentChecker {
         return Threshold;
     }
 
-    public List<StudentCoursePair> GetPairResults(){
-        return Pairs;
+    public String[] GetCourseResults(){
+        return courseResults;
+    }
+    public String[] GetStudentResults(){
+        return studentResults;
     }
 
     public void SetStudentList(List<Student> studentList){
         StudentList = studentList;
+        arraySize = StudentList.size();
     }
     public void SetThreshold(double threshold){
         Threshold = threshold;
     }
 
-    public List<StudentCoursePair> Sort(){
-        for (Student s: StudentList) {
+    public void Sort(){
+        for(int i = 0; i < StudentList.size(); i++) {
 
-            if(s.Grade >= Threshold){
-                StudentCoursePair pair = new StudentCoursePair(s.Name, s.GetMajor());
-                Pairs.add(pair);
-            } else{
-                StudentCoursePair pair = new StudentCoursePair(s.Name, s.GetMinor());
-                Pairs.add(pair);
+            var s = StudentList.get(i);
+            studentResults[i] = s.Name;
+            if (s.Grade >= Threshold) {
+                courseResults[i] = s.GetMajor().toString();
+            } else {
+                courseResults[i] = s.GetMinor().toString();
             }
         }
-        return Pairs;
     }
 }
